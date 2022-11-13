@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
+/* IMPORTANT */
 * {
     padding: 0;
     margin: 0;
@@ -17,15 +18,42 @@ body {
     border-radius: 15px;
     box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.466);
 }
-form {
-    padding: 20px;
-}
+
+/* THE HEADER */
 .image {
     background-image: url('https://www.thesun.co.uk/wp-content/uploads/2020/09/NINTCHDBPICT000610348114.jpg');
-    height: 300px;
+    height: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+h1, h2 {
+    text-align: center;
+    padding: 5px;
+}
+h1 {
+    font-weight: 900;
+    padding-top: 10px;
+}
+.info {
+    padding: 15px 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#completionDate {
+    padding-top: 10px;
+}
+.deadline {
+    font-family: monospace;
+    font-size: 1.2em;
+    color: #d1180a;
+}
+
+/* The form */
+form {
+    padding: 20px;
+}
+
+
