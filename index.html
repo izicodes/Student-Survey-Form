@@ -28,11 +28,11 @@
                 <table>
                     <tr>
                         <td><label for="fname">First name:</label></td>
-                        <td class="inputs"><input type="text" name="fname" id="fname" required></td>
+                        <td class="inputs"><input type="text" name="fname" id="fname" required placeholder="e.g. John"></td>
                     </tr>
                     <tr>
                         <td><label for="lname">Last name:</label></td>
-                        <td class="inputs"><input type="text" name="lname" id="lname" required> </td>
+                        <td class="inputs"><input type="text" name="lname" id="lname" required placeholder="e.g. Doe"> </td>
                     </tr>
                     <tr>
                         <td><label for="stuEmail">School email:</label></td>
@@ -40,12 +40,12 @@
                     </tr>
                     <tr>
                         <td><label for="">Form tutor:</label></td>
-                        <td class="inputs"><input type="text" name="tutor" id="tutor" required></td>
+                        <td class="inputs"><input type="text" name="tutor" id="tutor" required placeholder="e.g. Mrs. Hillary Forbes"></td>
                     </tr>
                     <tr>
                         <td><label for="">Year group:</label></td>
                         <td class="inputs">
-                            <select name="YearGroup" id="YearGroup">
+                            <select title="Please select your year group" name="YearGroup" id="YearGroup">
                                 <option value="y10" selected>Year 10</option>
                                 <option value="y11">Year 11</option>
                                 <option value="y12">Year 12</option>
@@ -118,7 +118,7 @@
                 <input type="checkbox" id="strugNone"><label for="strugNone">None</label> <br><br>
 
                 <p>If you picked a subject above, please explain why you are struggling below:</p><br>
-                <textarea name="strugExplain" id="strugExplain" cols="67" rows="3"></textarea>
+                <textarea name="strugExplain" id="strugExplain" cols="67" rows="3" placeholder="I struggle because..."></textarea>
 
             </section>
 
@@ -126,32 +126,35 @@
                 <h3>Accessibility and Comfortability</h3>
 
                 <p>How accessible is your teacher for questions and assistance?</p>
-                <select name="accessGroup" id="accessGroup">
+                <select title="Accessibility selection" name="accessGroup" id="accessGroup">
                     <option value="very">Very</option>
                     <option value="somewhatAccess">Somewhat accessible</option>
                     <option value="notAccess">Not accessible</option>
                 </select>
 
-                <p class="explainQuestion">How can can the school improve this?</p>
-                <textarea name="accessExplain" id="strugExplain" cols="50" rows="3"></textarea>
+                <p class="explainQuestion">How can the school improve this?</p>
+                <textarea name="accessExplain" id="accessExplain" cols="50" rows="3" placeholder="The school can improve the teachers' accessability by..."></textarea>
 
                 <p>How comfortable are you seeking assistance from classmates?</p>
-                <select name="accessGroup" id="accessGroup">
+                <select title="Comfortability selection" name="comfGroup" id="comfGroup">
                     <option value="very">Very comfortable</option>
                     <option value="somewhatComf">Somewhat comfortable</option>
                     <option value="notComf">Not comfortable</option>
                 </select>
 
-                <p class="explainQuestion">How can can the school improve this?</p>
-                <textarea name="accessExplain" id="strugExplain" cols="50" rows="3"></textarea>
+                <p class="explainQuestion">How can the school improve this?</p>
+                <textarea name="comfExplain" id="comfExplain" cols="50" rows="3" placeholder="The school can improve being comfortable at school by..."></textarea>
             </section>
 
             <section class="endPart">
-                <input type="checkbox" id="strugMaths"><label for="strugMaths">I declare that I have provided the correct information in the <strong>Student Details</strong> section</label> <br>
-                <input type="checkbox" id="strugMaths"><label for="strugMaths">I understand that my name will be kept anonymous if my survey form is read out during assemblies</label> <br>
-                <input type="checkbox" id="strugMaths"><label for="strugMaths">I declare that I have answered honestly in this survey form</label> <br>
+                <input type="checkbox" id="declare1" required><label for="declare1"><i><span class="requiredTick">* </span>I declare that I have provided the correct information in the <strong>Student Details</strong> section</i></label> <br><br>
 
-                <label for="dateComp">Date completed:</label> <input type="date" name="dateComp" id="dateComp" min="2022-11-07" max="2022-12-16">
+                <input type="checkbox" id="declare2" required>
+                <label for="declare2"><i><span class="requiredTick">* </span>I understand that my name will be kept anonymous if my survey form is read out during assemblies</i></label> <br><br>
+
+                <input type="checkbox" id="declare3" required><label for="declare3"><i><span class="requiredTick">* </span>I declare that I have answered honestly in this survey form</i></label> <br><br>
+
+                <label for="dateComp" id="dateLbl">Date completed:</label> <input type="date" name="dateComp" id="dateComp" min="2022-11-07" max="2022-12-16" required> <br><br>
 
                 <button type="submit">Submit Survey</button>
             </section>

@@ -40,14 +40,13 @@ h1 {
 .info {
     padding: 15px 25px;
     text-align: justify;
-    text-justify: inter-word;
 }
 #completionDate {
     padding-top: 10px;
 }
 .deadline {
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 1.15em;
     color: #d1180a;
 }
 
@@ -56,7 +55,7 @@ form {
     padding: 20px 25px;
 }
 section {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 /* STUDENT DETAILS SECTION */
@@ -83,8 +82,15 @@ td {
 .trQuestion {
     margin-bottom: 20px;
 }
-.trQuestion > label, .struggleConatiner > label {
+.trQuestion > label, .struggleConatiner > label, .endPart > label {
     padding-left: 10px;
+}
+
+/* SUBJECT REVIEW SECTION */
+.struggleConatiner textarea, .accessibleQ > textarea {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    padding: 3px 5px;
+    font-size: 15px;
 }
 
 
@@ -94,4 +100,44 @@ td {
 }
 .explainQuestion {
     margin-top: 10px;
+}
+#comfExplain {
+    margin-bottom: 0;
+}
+.accessibleQ > select {
+    height: 20px; 
+}
+
+/* END OF FORM  */
+.endPart {
+    border-top: 3px solid #ffb703;
+    padding-top: 30px;
+}
+#dateLbl {
+    padding: 0;
+}
+#dateComp {
+    height: 20px; 
+    margin-left: 10px;
+}
+.endPart button {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 7.5px;
+    border: none;
+    font-size: large;
+    background-color: #ffb703;
+    color: #023047;
+    transition: 300ms;
+}
+.endPart button:hover {
+    background-color: #dea003;
+    cursor: pointer;
+}
+
+.requiredTick {
+    color: #d1180a;
+    font-weight: 600;
 }
