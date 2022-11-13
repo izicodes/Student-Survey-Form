@@ -122,7 +122,7 @@ td {
 }
 .endPart button {
     padding: 10px;
-    margin: 0 auto;
+    margin: 15px auto;
     display: flex;
     align-items: center;
     border-radius: 7.5px;
@@ -140,6 +140,9 @@ td {
 .requiredTick {
     color: #d1180a;
     font-weight: 600;
+}
+#end {
+    margin-bottom: 30px;
 }
 
 /* FOOTER SECTION */
