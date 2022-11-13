@@ -25,29 +25,34 @@
 
             <section class="studentContainer">
                 <h3>Student Details</h3>
-                <label for="fname">First name:</label>
-                <input type="text" name="fname" id="fname" required>
-                <br><br>
-
-                <label for="lname">Last name:</label>
-                <input type="text" name="lname" id="lname" required> 
-                <br><br>
-
-                <label for="stuEmail">School email:</label>
-                <input type="email" name="stuEmail" id="stuEmail" required placeholder="e.g. johndoe@pmgschool.net"> 
-                <br><br>
-
-                <label for="">Form tutor:</label>
-                <input type="text" name="tutor" id="tutor" required>
-                <br><br>
-
-                <label for="">Year group:</label>
-                <select name="YearGroup" id="YearGroup">
-                    <option value="y10" selected>Year 10</option>
-                    <option value="y11">Year 11</option>
-                    <option value="y12">Year 12</option>
-                </select>
-                
+                <table>
+                    <tr>
+                        <td><label for="fname">First name:</label></td>
+                        <td class="inputs"><input type="text" name="fname" id="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last name:</label></td>
+                        <td class="inputs"><input type="text" name="lname" id="lname" required> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="stuEmail">School email:</label></td>
+                        <td class="inputs"><input type="email" name="stuEmail" id="stuEmail" required placeholder="e.g. johndoe@pmgschool.net"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Form tutor:</label></td>
+                        <td class="inputs"><input type="text" name="tutor" id="tutor" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Year group:</label></td>
+                        <td class="inputs">
+                            <select name="YearGroup" id="YearGroup">
+                                <option value="y10" selected>Year 10</option>
+                                <option value="y11">Year 11</option>
+                                <option value="y12">Year 12</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
             </section>
 
             <section class="teachersContainer">

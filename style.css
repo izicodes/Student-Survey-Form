@@ -55,5 +55,29 @@ h1 {
 form {
     padding: 20px;
 }
+section {
+    margin-bottom: 30px;
+}
 
+/* STUDENT DETAILS SECTION */
+h3 {
+    border-bottom: 3px solid #ffb703;
+    padding-bottom: 3px;
+}
+td.inputs {
+    padding: 0 20px;
+}
+td.inputs > input {
+    width: 200px;
+    height: 20px;
+}
+table {
+    padding-top: 10px;
+}
+td {
+    padding: 10px 0;
+}
+.inputs > select {
+    height: 22px;
+}
 
