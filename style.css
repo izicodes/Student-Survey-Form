@@ -87,3 +87,11 @@ td {
     padding-left: 10px;
 }
 
+
+/* Accessibility and Comfortability */
+.accessibleQ > select, .accessibleQ > textarea {
+    margin: 20px 0;
+}
+.explainQuestion {
+    margin-top: 10px;
+}
