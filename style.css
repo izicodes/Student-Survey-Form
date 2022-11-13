@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #023047;
+    color: #343541;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+.content-wrapper {
+    width: 50em;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.466);
+}
+form {
+    padding: 20px;
+}
+.image {
+    background-image: url('https://www.thesun.co.uk/wp-content/uploads/2020/09/NINTCHDBPICT000610348114.jpg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
