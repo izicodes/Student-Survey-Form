@@ -42,18 +42,17 @@
                 <br><br>
 
                 <label for="">Year group:</label>
-                <select name="" id="">
-                    <option value="" selected>Year 10</option>
-                    <option value="">Year 11</option>
-                    <option value="">Year 12</option>
+                <select name="YearGroup" id="YearGroup">
+                    <option value="y10" selected>Year 10</option>
+                    <option value="y11">Year 11</option>
+                    <option value="y12">Year 12</option>
                 </select>
                 
             </section>
 
             <section class="teachersContainer">
-                <h3>Teachers Reviews</h3>
-                Please select the teacher who you enjoy their classes the <strong>most</strong> in English Language & Literature
-                <br>
+                <h3>Teachers Review</h3>
+                <p>Please select the teacher who you enjoy their classes the <strong>most</strong> in English Language & Literature</p>
                 <input type="radio" id="mrAW" name="EngLangLit"><label for="mrAW">Mr. Averie Walker</label>
                 <br>
                 <input type="radio" id="mrMP" name="EngLangLit"><label for="mrMP">Mr. Meadow Preston</label>
@@ -61,10 +60,9 @@
                 <input type="radio" id="missSF" name="EngLangLit"><label for="missSF">Miss. Selina Foster</label>
                 <br>
                 <input type="radio" id="missKN" name="EngLangLit"><label for="missKN">Ms. Keyla Nunez</label>
-                <br><br>
-
-                Please select the teacher who you enjoy their classes the <strong>most</strong> in Mathematics
                 <br>
+
+                <p>Please select the teacher who you enjoy their classes the <strong>most</strong> in Mathematics</p>
                 <input type="radio" id="mrSG" name="Maths"><label for="mrSG">Mr. Steve Good</label>
                 <br>
                 <input type="radio" id="mrsHF" name="Maths"><label for="mrsHF">Mrs. Hillary Forbes</label>
@@ -72,10 +70,9 @@
                 <input type="radio" id="missCP" name="Maths"><label for="missCP">Miss. Carter Perry</label>
                 <br>
                 <input type="radio" id="mrBC" name="Maths"><label for="mrBC">Mr. Brody Carter</label>
-                <br><br>
-
-                Please select the teacher who you enjoy their classes the <strong>most</strong> in Mathematics
                 <br>
+
+                <p>Please select the teacher who you enjoy their classes the <strong>most</strong> in Mathematics</p>
                 <input type="radio" id="mrSG" name="Maths"><label for="mrSG">Mr. Steve Good</label>
                 <br>
                 <input type="radio" id="mrsHF" name="Maths"><label for="mrsHF">Mrs. Hillary Forbes</label>
@@ -83,10 +80,9 @@
                 <input type="radio" id="missCP" name="Maths"><label for="missCP">Miss. Carter Perry</label>
                 <br>
                 <input type="radio" id="mrBC" name="Maths"><label for="mrBC">Mr. Brody Carter</label>
-                <br><br>
-
-                Please select the teacher who you enjoy their classes the <strong>most</strong> in Science
                 <br>
+
+                <p>Please select the teacher who you enjoy their classes the <strong>most</strong> in Science</p>
                 <input type="radio" id="mrsBM" name="Science"><label for="mrsBM">Mrs. Brielle McGrath</label>
                 <br>
                 <input type="radio" id="mrsFR" name="Science"><label for="mrsFR">Mrs. Fiona Reilly</label>
@@ -96,8 +92,7 @@
                 <input type="radio" id="mrRH" name="Science"><label for="mrRH">Mr. Rayne Harding</label>
                 <br><br>
 
-                Please select the teacher who you enjoy their classes the <strong>most</strong> in Information Technology
-                <br>
+                <p>Please select the teacher who you enjoy their classes the <strong>most</strong> in Information Technology</p>
                 <input type="radio" id="mrEC" name="IT"><label for="mrEC">Mr. Elliott Craig</label>
                 <br>
                 <input type="radio" id="msDD" name="IT"><label for="msDD">Ms. Dashawn Dillon</label>
@@ -112,9 +107,48 @@
             <section class="struggleConatiner">
                 <h3>Subjects Review</h3>
 
-                <p>Which subjects are you struggling with?</p>
-                <input type="checkbox" name="" id=""><label for=""></label>
+                <p>Which subjects are you struggling with? (You can pick multiple subjects)</p>
+                <input type="checkbox" id="strugEnglish"><label for="strugEnglish">English Language & Literature</label> <br>
+                <input type="checkbox" id="strugMaths"><label for="strugMaths">Mathematics</label> <br>
+                <input type="checkbox" id="strugScience"><label for="strugScience">Science</label> <br>
+                <input type="checkbox" id="strugIT"><label for="strugIT">Information Technology</label> <br>
+                <input type="checkbox" id="strugNone"><label for="strugNone">None</label> <br>
 
+                <p>If you picked a subject above, please explain why you are struggling below</p>
+                <textarea name="strugExplain" id="strugExplain" cols="50" rows="3"></textarea>
+
+            </section>
+
+            <section class="accessibleQ">
+                <h3>Accessibility and Comfortability </h3>
+
+                <p>How accessible is your teacher for questions and assistance?</p>
+                <select name="accessGroup" id="accessGroup">
+                    <option value="very">Very</option>
+                    <option value="somewhatAccess">Somewhat accessible</option>
+                    <option value="notAccess">Not accessible</option>
+                </select>
+
+                <p>How can can the school improve this?</p>
+                <textarea name="accessExplain" id="strugExplain" cols="50" rows="3"></textarea>
+
+                <p>How comfortable are you seeking assistance from classmates?</p>
+                <select name="accessGroup" id="accessGroup">
+                    <option value="very">Very comfortable</option>
+                    <option value="somewhatComf">Somewhat comfortable</option>
+                    <option value="notComf">Not comfortable</option>
+                </select>
+
+                <p>How can can the school improve this?</p>
+                <textarea name="accessExplain" id="strugExplain" cols="50" rows="3"></textarea>
+            </section>
+
+            <section class="endPart">
+                <input type="checkbox" id="strugMaths"><label for="strugMaths">I declare that I have provided the correct information in the <strong>Student Details</strong> section</label> <br>
+                <input type="checkbox" id="strugMaths"><label for="strugMaths">I understand that my name will be kept anonymous if my survey form is read out during assemblies</label> <br>
+                <input type="checkbox" id="strugMaths"><label for="strugMaths">I declare that I have answered honestly in this survey form</label> <br>
+
+                <button type="submit">Submit Survey</button>
             </section>
 
 
