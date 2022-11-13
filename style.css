@@ -144,6 +144,9 @@ td {
 #end {
     margin-bottom: 30px;
 }
+#linkButton {
+    text-decoration: none;
+}
 
 /* FOOTER SECTION */
 footer {
